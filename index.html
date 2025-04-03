@@ -1,244 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="utf-8" />
-		<title></title>
-		<meta name="description" content="" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link id="main-css" rel="stylesheet" href="dist/css/theme.css" />
-	</head>
 
-	<body>
-		<h1>test</h1>
-		<header>
-			<h1>HTML5 Afec Kit</h1>
-			<nav>
-				<ul>
-					<li>
-						<a href="#Imbrication_listes" title="Titre de mon ancres"
-							>Lien vers une ancre</a
-						>
-					</li>
-					<li><a href="" title="">Form</a></li>
-					<li><a href="" title="">Grid</a></li>
-				</ul>
-			</nav>
-		</header>
-		<section class="c-section">
-			<h2>Les titres h1 à h6</h2>
-			<h1>Titre h1</h1>
-			<h2>Titre h2</h2>
-			<h3>Titre h3</h3>
-			<h4>Titre h4</h4>
-			<h5>Titre h5</h5>
-			<h6>Titre h6</h6>
-		</section>
-		<section class="c-section">
-			<h2>Les paragraphes</h2>
-			<p>
-				Exemple d'un paragraphe avec <mark>text surligné</mark>,
-				<u>texte souligné</u> et du <small>texte plus petit</small>.
-			</p>
-			<p>
-				Il est également possible de <strong>mettre son texte en gras</strong>,
-				avec des <sup>indices supérieurs</sup>, <sub>indices inférieurs</sub>,
-				du <i>texte en italique</i> ou encore <u>souligné</u> et même
-				<del>barré</del>.
-			</p>
-			<p>
-				Au sein d'un paragraphe, il est également possible de faire<br />des
-				sauts de ligne avec la balise &lt;br&gt;.
-			</p>
-		</section>
-		<section class="c-section">
-			<h2>Les listes</h2>
-			<h3>Les listes ordonnées</h3>
-			<ul>
-				<li>Pomme</li>
-				<li>Banane</li>
-				<li>Orange</li>
-			</ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
-			<h3>Les listes non ordonnées</h3>
-			<ol>
-				<li>Faire bouillir de l'eau</li>
-				<li>Ajouter du café moulu</li>
-				<li>Filtrer et servir</li>
-			</ol>
-			<ol type="a">
-				<li>Faire bouillir de l'eau</li>
-				<li>Ajouter du café moulu</li>
-				<li>Filtrer et servir</li>
-			</ol>
-			<ol type="A">
-				<li>Faire bouillir de l'eau</li>
-				<li>Ajouter du café moulu</li>
-				<li>Filtrer et servir</li>
-			</ol>
-			<ol type="i">
-				<li>Faire bouillir de l'eau</li>
-				<li>Ajouter du café moulu</li>
-				<li>Filtrer et servir</li>
-			</ol>
-			<ol type="I">
-				<li>Faire bouillir de l'eau</li>
-				<li>Ajouter du café moulu</li>
-				<li>Filtrer et servir</li>
-			</ol>
+<body>
+    <img src="" alt="">
 
-			<h3>Les listes de définition</h3>
-			<dl>
-				<dt>HTML</dt>
-				<dd>Langage permettant de structurer une page web.</dd>
-				<dt>CSS</dt>
-				<dd>Langage permettant de styliser une page web.</dd>
-			</dl>
+    <header>
+        <section>
+           <button><img src="images/menu(1).png" alt="menu" id="menu" width="40" height="40" ></button>
+            <center><input type="text" placeholder="Recherche.."></center>
 
-			<h3 id="Imbrication_listes">L'imbrication de listes</h3>
-			<ul>
-				<li>
-					Mammifères
-					<ul>
-						<li>Chat</li>
-						<li>Chien</li>
-						<li>Éléphant</li>
-					</ul>
-				</li>
-				<li>
-					Oiseaux
-					<ul>
-						<li>Aigle</li>
-						<li>Perruche</li>
-					</ul>
-				</li>
-			</ul>
-		</section>
 
-		<section class="c-section">
-			<h3>Les balises div et span</h3>
-			<div style="background: #ff0000; color: #fff">
-				Je suis une balise &lt;div&gt;. Mon affichage par défaut est de type
-				bloc, soit 100% de la largeur de mon parent.
-			</div>
-			<span style="background: #5409cc; color: #fff">
-				Je suis une balise &lt;span&gt;. Mon affichage par défaut est de type
-				inline, j'utilise seulement l'espace doint j'ai besoin.
-			</span>
-			<span style="background: #441d84; color: #fff">
-				On peut meme me succéder à une autre balie span sans que je retourne à
-				la ligne.
-			</span>
-			<span style="background: #48970f; color: #fff">Cool</span>
 
-			<div>
-				<p>
-					Je suis un paragraphe avec <span>une balise span</span> à l'intérieur.
-					On ne le voit pas car je suis de type inline.
-				</p>
-			</div>
-		</section>
+            </div>
+        </section>
+    </header>
 
-		<section class="c-section">
-			<h2>Afficher ou cacher un sommaire avec &lt;details&gt;</h2>
-			<h3>Caché par défaut</h3>
-			<details>
-				<summary>Cuba libre</summary>
-				<ul>
-					<li><strong>6 cl</strong> de rhum cubain</li>
-					<li><strong>4 cl</strong> de jus de citron</li>
-					<li><strong>15 cl</strong> de cola</li>
-				</ul>
-			</details>
-			<h3>Ouvert par défaut</h3>
-			<details open="true">
-				<summary>Cuba libre</summary>
-				<ul>
-					<li><strong>6 cl</strong> de rhum cubain</li>
-					<li><strong>4 cl</strong> de jus de citron</li>
-					<li><strong>15 cl</strong> de cola</li>
-				</ul>
-			</details>
-		</section>
 
-		<section class="c-section">
-			<h2>Les images avec &lt;picture&gt;</h2>
-			<picture>
-				<!-- Image pour les petits écrans (jusqu'à 600px) -->
-				<source
-					srcset="https://placehold.co/600x600"
-					media="(max-width: 600px)" />
 
-				<!-- Image pour les écrans moyens (de 601px à 1024px) -->
-				<source
-					srcset="https://placehold.co/1024x1024"
-					media="(max-width: 1024px)" />
 
-				<!-- Image par défaut pour les grands écrans -->
-				<img src="https://placehold.co/1400x1400" alt="Un paysage magnifique" />
-			</picture>
-		</section>
+</body>
 
-		<section class="c-section">
-			<h2>Les formulaires</h2>
-			<fieldset>
-				<legend>Informations personnelles</legend>
-				<div class="form-group">
-					<label for="nom">Nom :</label>
-					<input type="text" id="nom" name="nom" />
-				</div>
-
-				<div class="form-group">
-					<label for="email">Email :</label>
-					<input type="email" id="email" name="email" />
-				</div>
-
-				<div class="form-group">
-					<label for="message">Votre message :</label>
-					<textarea id="message" name="message" rows="5" cols="30">
-Texte par défaut...</textarea
-					>
-				</div>
-
-				<div class="form-group">
-					<label>Genre :</label>
-					<input type="radio" name="genre" value="homme" /> Homme
-					<input type="radio" name="genre" value="femme" /> Femme
-				</div>
-
-				<div class="form-group">
-					<label>Sports pratiqués :</label>
-					<input type="checkbox" name="sport" value="foot" /> Football
-					<input type="checkbox" name="sport" value="tennis" /> Tennis
-					<input type="checkbox" name="sport" value="natation" /> Natation
-				</div>
-
-				<div class="form-group">
-					<label for="pays">Pays :</label>
-					<select id="pays" name="pays">
-						<option value="fr">France</option>
-						<option value="us">États-Unis</option>
-						<option value="jp">Japon</option>
-					</select>
-				</div>
-
-				<div class="form-group">
-					<input type="submit" value="Envoyer" />
-					<input type="reset" value="Réinitialiser" />
-					<button type="submit">Envoyer</button>
-				</div>
-			</fieldset>
-		</section>
-		<section class="c-section">
-			<fieldset>
-				<legend>Informations personnelles</legend>
-				<label for="nom">Nom :</label>
-				<input type="text" id="nom" name="nom" />
-
-				<label for="email">Email :</label>
-				<input type="email" id="email" name="email" />
-			</fieldset>
-		</section>
-
-		<script defer src="dist/js/theme.js"></script>
-	</body>
 </html>
