@@ -1,12 +1,27 @@
 .meteo {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     border-style: solid ;
     border-width: 1px;
     border-color: black;
+    object-fit: fill;
 
 }
 
 .center {
+    object-fit: fill;
+    /* width: 50%;
+    height: 50%; */
 
+}
+
+.notification{
+    display: flex;
+    justify-content: center;
+    
+
+}
+.notification2 {
+    display: flex;
+    justify-content: center;
 }
