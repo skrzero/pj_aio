@@ -12,9 +12,18 @@
 }
 .menu_nav {
     display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    margin-bottom: 12px;
+    gap: 16px;
 }
+
 .menu_input {
-    align-self: center;
+    flex: 1;
+    max-width: 400px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 .meteo {
     display: flex;
@@ -34,10 +43,26 @@
 .notification{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    gap: 4px;
     
 
 }
-.notification2 {
+.notif2 {
     display: flex;
     justify-content: center;
+}
+.bouton_tout_voir {
+    display: flex;
+    justify-content: center;
+   
+}
+#tout_voir {
+    background-color: aqua;
+    width: 100%;
+    height: 30PX;
+    border: solid 1px black;
+    border-radius: 4PX;
+    
+    
 }
