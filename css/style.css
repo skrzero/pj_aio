@@ -1,0 +1,83 @@
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+:root {
+    --gutter-width: 30px;
+    --padding-xs: 10px;
+    --padding-sm: 20px;
+    --padding-page: 15px;
+}
+
+/* Layout */
+.page {
+    padding: var(--padding-page);
+}
+
+/* Header */
+
+#header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: var(--gutter-width);
+    margin-bottom: var(--padding-xs)
+}
+
+#header .logo {
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    position: relative;
+}
+
+#header .logo img {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%)  scale(0.65);
+}
+
+#header .btnMenu {
+    width: 20px;
+    height: 20px;
+}
+
+#header .searchBar {
+    width: 100%;
+}
+
+#header .searchBar input {
+    border: 1px solid #dadada;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+
+.menu_hg{
+    width: 20px;
+    height: auto;
+}
+.recherche_bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.meteo {
+    display: flex;
+    justify-content: center;
+    border-style: solid ;
+    border-width: 1px;
+    border-color: black;
+    position: relative;
+
+    background-image: url('images/nuage.jpg');
+    background-size: cover;
+}
+
+
+
+
+
+

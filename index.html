@@ -4,26 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/theme.css">
     <title>Document</title>
 </head>
 
 <body>
 
-    <header name="menu_nav">
-        <section>
-            <button><img src="images/menu(1).png" alt="menu" id="menu" width="40" height="40"></button>
-            <center><input type="text" placeholder="Recherche.."></center>
-        </section>
-    </header>
+    <div class="page">
 
-    <div class="meteo">
-        
-        <img src="images/nuage.jpg" alt="soleil" class="center">
+        <header id="header">
+            
+            <div class="btnMenu">
+                <img src="images/menu(1).png" alt="menu" class="menu_hg">
+            </div>
+
+            <div class="searchBar">
+                <input type="text" placeholder="Recherche.." class="recherche_bar">
+            </div>
+
+            <div class="logo">
+                <img src="images/Animation_-_1743170664427.gif" alt="">
+            </div>
+        </header>
+
+        <div class="meteo">
+            <div style="height: 400px;">Widget Meteo</div>
+        </div>
+
+        <div class="notification">
+            <div class="date"></div>
+            <div class="notif"></div>
+        </div>
+        <div class="arrow">
+            <img src="images/chevron-right.png" alt="">
+        </div>
     </div>
-
-
-
 
 </body>
 
