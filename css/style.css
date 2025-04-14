@@ -7,6 +7,8 @@
     --padding-xs: 10px;
     --padding-sm: 20px;
     --padding-page: 15px;
+    --margin-bottom:20px;
+    --border-radius:6px;
 }
 
 /* Layout */
@@ -70,10 +72,53 @@
     border-style: solid ;
     border-width: 1px;
     border-color: black;
-    position: relative;
+    height: 155px;
+    width: 314px;
+    margin-bottom:var(--margin-bottom);
+    border-radius: var(--border-radius);
+    
+}
 
-    background-image: url('images/nuage.jpg');
-    background-size: cover;
+.background_meteo{
+    position: static;
+    height: 153px;
+    width: 312px;
+}
+
+.widget{
+    position: absolute;
+}
+
+.notification{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: var(--border-radius);
+    height:100% ;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 5px;
+}
+
+.notif{
+    display: flex;
+    align-self: center;
+    height: 80px;
+    width: 314px;
+    border: solid 1px black;
+    margin-bottom: 5px;
+    background-color: antiquewhite;
+    padding: 20px;
+}
+.date{
+    display: flex;
+    align-self: center;
+    height: 80px;
+    width: 314px;
+    border: solid black 1px;
+    background-color: aquamarine;
 }
 
 
