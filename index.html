@@ -4,42 +4,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dist/css/theme.css">
-    <title>Document</title>
+    <meta name="description" content="planning quotidien">
+    <meta name="keywords" content="agenda,mail,rendez-vous,meteo,organisateur de journée">
+    <link rel="stylesheet" href="css/theme.css">
+    <title>AIO</title>
 </head>
 
 <body>
-    <!-- bouton menu + barre de recherche -->
-    <header name="menu_nav" class="menu_nav">
-        <button><img src="images/menu(1).png" alt="menu" id="menu" class="menu"></button>
-        <input type="text" placeholder="Recherche.." class="menu_input" />
 
-    </header>
-    <div class="all_page">
-        <!-- meteo -->
-        <section class="meteo">
-            <img src="images/nuage.jpg" alt="soleil" class="background_cloud">
-        </section>
-        <!-- notif -->
-        <section class="notification">
-            <textarea name="notif" id="notif" rows="4" cols="50">
-03/04/25 Rendez vous garage pour changer les pneus 
-            </textarea>
-            <textarea name="notif2" id="notif2" rows="4" cols="50">
-05/04/25 rendez vous medecin
-            </textarea>        
-        </section>
-        <div class="bouton_tout_voir">
-            <input type="button" value="Tout voir" id="tout_voir" >
+    <div class="page">
+
+        <header id="header">
+            
+            <div class="btnMenu">
+                <img src="images/menu(1).png" alt="menu" class="menu_hg">
+            </div>
+
+            <div class="searchBar">
+                <input type="text" placeholder="Recherche.." class="recherche_bar">
+            </div>
+
+            <div class="logo">
+                <img src="images/Animation_-_1743170664427.gif" alt="">
+            </div>
+        </header>
+<!-- meteo -->
+        <div class="meteo">
+            <div class="widget">Widget Meteo</div>
+            <img class="background_meteo" src="images/nuage.jpg" alt="">
+        </div>
+<!-- notification -->
+        <div class="notification">
+            <div class="notif -blue">
+                <div class="notif_content">
+                    <div class="notif_content_date">
+                        <span class="date">30/12</span>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="notif_content_title">
+                        Rendez-vous garage pour changer les pneus ...
+                    </div>
+                    <div class="notif_content_action">
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="notif -purple">Test</div>
+            <div class="notif">Test</div>
+                <!-- <div class="rectangle"></div>
+                <div class="notif"></div>
+                <div class="date"></div> -->
+            </div>            
+            
+        </div>
+        <div class="arrow">
             <img src="images/chevron-right.png" alt="">
         </div>
     </div>
+    <div class="btn_bleu">
 
+    </div>
+    <!-- fin de notification -->
+<!-- minuteur -->
+    <div class="minuteur">
 
+    </div>
 
+    <div class="btn_vert">
+    </div>
+    <!-- fin de minuteur  -->
+     <!-- bloc note  -->
+    <div class="bloc_note">
 
+    </div>
+    <!-- fin de bloc note  -->
+     <!-- bloc mail  -->
+    <div class="bloc_mail">
 
-
+    </div>
+<!-- fin de bloc mail  -->
 </body>
 
 </html>

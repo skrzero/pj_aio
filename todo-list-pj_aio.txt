@@ -1,0 +1,23 @@
+nav
+	bouton burger + barre de recherche +logo animé
+
+meteo
+	sliders + background (img) + api openweather
+
+notification
+	date format (30/12/25) + notif via agenda + bouton (arrow)
+	dans un cadre + margin bottom entre les notif
+	bouton tout voir (bleu)
+
+minuteur 
+	cadre + texte (minuteur) + minuteur (a coder) + bouton demarrer (copie du bouton tout voir mais en vert)
+
+bloc note a gauche
+	cadre + logo (bloc note) = renvoie vers bloc note (a coder)
+	
+bloc mail droite 
+	cadre + logo (mail) = renvoie vers Outlook
+
+arriere plan
+	image fix 
+	lol
