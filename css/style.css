@@ -11,12 +11,13 @@
     --border-radius:6px;
 }
 body{
-    background-image: url(fond_decran.png);
+    background-image: url("fond_decran.png");
 }
 
 /* Layout */
 .page {
     padding: var(--padding-page);
+    
     
 }
 
@@ -77,7 +78,7 @@ body{
     border-style: solid ;
     border-width: 1px;
     border-color: black;
-    height: 155px;
+    height: 12vh;
     margin-bottom:var(--margin-bottom);
     border-radius: var(--border-radius);
     
@@ -121,11 +122,13 @@ body{
 .notif.-blue {
     --notif-background-color: blue;
     --notif-text-color: #fff;
+    height: 10vh;
 }
 
 .notif.-purple {
     --notif-background-color: purple;
     --notif-text-color: white;
+    height: 10vh;
 }
 
 .notif_content {
@@ -156,7 +159,7 @@ body{
     border-radius: var(--border-radius);
     background-color: aqua;
     border: solid black 1px;
-    height: 40px;
+    height: 4.8vh;
     margin-top: 5px;
     margin-bottom:var(--margin-bottom);
 
@@ -167,6 +170,7 @@ body{
     flex-direction: column;
     gap: 20px;
     overflow: hidden;
+    height: 10vh;
     align-items: center;
     justify-content: center;
     height: 180px;
@@ -203,13 +207,39 @@ body{
     border-radius: var(--border-radius);
     background-color: rgb(85, 222, 85);
     border: solid black 1px;
-    height: 40px;
+    height: 4.8vh;
     width: 90%;
     margin-top: 5px;
     margin-bottom: 2px;
     
 }
 
+.bloc{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    align-content: center;
+    border: solid black 1px;
+    border-radius: var(--border-radius);
+    background-color: grey;
+    margin-top: 10px;
+    height: 20vh;
+}
+.bloc_note>img{
+    display: flex;
+    background-color: yellow;
+    width: 20vw;
+    height: 20vh;
+    padding: 8px;
+    
+}
+.bloc_mail>img{
+    width: 20vw;
+    height: 20vh;
+    padding: 8px;
+    align-content: center;
+    background-color: red;
+}
 
 
 
