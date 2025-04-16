@@ -1,1 +1,293 @@
-@layer reset{*,:after,:before{box-sizing:border-box}a,b,blockquote,body,canvas,caption,code,div,em,embed,fieldset,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,label,li,main,nav,object,ol,p,pre,section,small,span,strike,strong,sub,sup,table,tbody,td,tfoot,th,thead,tr,tt,u,ul,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline;text-size-adjust:none}ol,ul{list-style:none}footer,header,main,nav,section{display:block}body{line-height:1}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:none}table{border-collapse:collapse;border-spacing:0}input{-webkit-appearance:none;border-radius:0}}body{background:var(--primary-color)}:root{--primary-color:#e0e9ff}.c-section{margin-bottom:50px;padding-bottom:50px;border-bottom:1px solid #dadada}
+@layer reset {
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+  html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-size-adjust: none;
+  }
+  footer, header, nav, section, main {
+    display: block;
+  }
+  body {
+    line-height: 1;
+  }
+  ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  input {
+    -webkit-appearance: none;
+    border-radius: 0;
+  }
+}
+body {
+  background: var(--primary-color);
+}
+
+:root {
+  --primary-color: #e0e9ff;
+}
+
+.c-section {
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #dadada;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+:root {
+  --gutter-width: 30px;
+  --padding-xs: 10px;
+  --padding-sm: 20px;
+  --padding-page: 15px;
+  --margin-bottom:10px;
+  --border-radius:6px;
+}
+
+:root {
+  --notif-text-color: #333;
+  --notif-background-color: transparent;
+  --notif-date-color: #333;
+}
+
+body {
+  background-image: url("fond_decran.png");
+}
+
+/* Layout */
+.page {
+  padding: var(--padding-page);
+}
+
+/* Header */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gutter-width);
+  margin-bottom: var(--padding-xs);
+}
+
+#header .logo {
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+  position: relative;
+}
+
+#header .logo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.65);
+}
+
+#header .btnMenu {
+  width: 20px;
+  height: 20px;
+}
+
+#header .searchBar {
+  width: 100%;
+}
+
+#header .searchBar input {
+  border: 1px solid #dadada;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.menu_hg {
+  width: 20px;
+  height: auto;
+}
+
+.recherche_bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.meteo {
+  display: flex;
+  justify-content: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  height: 20vh;
+  margin-bottom: var(--margin-bottom);
+  border-radius: var(--border-radius);
+}
+
+.background_meteo {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.widget {
+  position: absolute;
+}
+
+.notification {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-content: space-between;
+}
+
+.notif {
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+  color: var(--notif-text-color);
+  background: var(--notif-background-color);
+}
+
+.notif + .notif {
+  margin-top: 5px;
+}
+
+.notif.-blue {
+  --notif-background-color: blue;
+  --notif-text-color: #fff;
+  height: 10vh;
+}
+
+.notif.-purple {
+  --notif-background-color: purple;
+  --notif-text-color: white;
+  height: 10vh;
+}
+
+.notif_content {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+.notif_content_date {
+  display: flex;
+  flex-direction: column;
+}
+
+.notif_content_date .date {
+  color: white;
+}
+
+.notif.-blue .notif_content_date .date {
+  color: #fff;
+}
+
+.btn_bleu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius);
+  background-color: aqua;
+  border: solid black 1px;
+  height: 4.8vh;
+  margin-top: 5px;
+  margin-bottom: var(--margin-bottom);
+}
+
+.minuteur {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  background-color: pink;
+  border: solid black 1px;
+  border-radius: var(--border-radius);
+}
+
+.titre_minuteur {
+  display: flex;
+  justify-content: center;
+}
+
+.time_set {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.container_hours {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-self: center;
+  gap: 2px;
+  align-content: space-around;
+}
+
+.btn_vert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius);
+  background-color: rgb(85, 222, 85);
+  border: solid black 1px;
+  height: 4.8vh;
+  width: 90%;
+  margin-top: 5px;
+  margin-bottom: 2px;
+}
+
+.bloc {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  align-content: center;
+  border: solid black 1px;
+  border-radius: var(--border-radius);
+  background-color: grey;
+  margin-top: 10px;
+  height: 20vh;
+}
+
+.bloc_note > img {
+  display: flex;
+  background-color: yellow;
+  width: 20vw;
+  height: 20vh;
+  padding: 8px;
+}
+
+.bloc_mail > img {
+  width: 20vw;
+  height: 20vh;
+  padding: 8px;
+  align-content: center;
+  background-color: red;
+}
+
+/*# sourceMappingURL=theme.css.map */
