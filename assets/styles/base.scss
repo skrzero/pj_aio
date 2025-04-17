@@ -64,28 +64,35 @@ body{
     transform: translate(-50%, -50%)  scale(0.65);
 }
 
-#header .btnMenu {
+#header .btnheader_btn_MenuMenu {
     width: 20px;
     height: 20px;
 }
 
-#header .searchBar {
+#header .search_Bar {
     width: 100%;
 }
 
-#header .searchBar input {
+#header .search_Bar input {
     border: 1px solid #dadada;
     padding: 10px 15px;
     width: 100%;
 }
 
 
-.menu_hg{
+.header_btn_menu_logo{
     width: 20px;
     height: auto;
+    background-color: #dadada;
+    
 }
+.header_btn_Menu img{
+    color:red;
+}
+.search_Bar{
 
-.recherche_bar{
+}
+.search_Bar_text{
     display: flex;
     flex-direction: column;
     justify-content: center
