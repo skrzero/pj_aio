@@ -83,11 +83,12 @@ body{
 .header_btn_menu_logo{
     width: 20px;
     height: auto;
-    background-color: #dadada;
+  
     
 }
 .header_btn_Menu img{
-    color:red;
+    width: 45px;
+    height: 45px;
 }
 .search_Bar{
 
@@ -95,7 +96,8 @@ body{
 .search_Bar_text{
     display: flex;
     flex-direction: column;
-    justify-content: center
+    justify-content: center;
+    opacity: 70%;
 }
 
 .meteo {
@@ -120,14 +122,13 @@ body{
     position: absolute;
 }
 
-.notification {
+.body_app {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     justify-content: space-between;
+    
 }
-
-
 
 .notif {
     background: #f0f0f0;
@@ -135,7 +136,12 @@ body{
     border-radius: 5px;
     color: var(--notif-text-color);
     background: var(--notif-background-color);
+    
+    
 }
+.notif_content[
+    
+]
 
 .notif + .notif {
     margin-top: 5px;
