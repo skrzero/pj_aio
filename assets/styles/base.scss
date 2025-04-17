@@ -90,14 +90,14 @@ body{
     width: 45px;
     height: 45px;
 }
-.search_Bar{
+// .search_Bar{
 
-}
+// }
 .search_Bar_text{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    opacity: 70%;
+    
 }
 
 .meteo {
@@ -139,24 +139,31 @@ body{
     
     
 }
-.notif_content[
+.notif.-purple{
+
+}
     
-]
 
 .notif + .notif {
     margin-top: 5px;
 }
 
 .notif.-blue {
-    --notif-background-color: blue;
+    // --notif-background-color:black;
     --notif-text-color: #fff;
     height: 10vh;
+    
 }
 
 .notif.-purple {
-    --notif-background-color: purple;
+    --notif-background-color: black;
     --notif-text-color: white;
     height: 10vh;
+    
+}
+.notif.-blue .notif.-purple :not(.notif_content) {
+    opacity: 50%;
+    background-color:black;
 }
 
 .notif_content {
