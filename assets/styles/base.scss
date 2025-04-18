@@ -106,8 +106,8 @@ body{
     border-style: solid ;
     border-width: 1px;
     border-color: black;
-    height: 20vh;
-    margin-bottom:var(--margin-bottom);
+    height: 15vh;
+    margin-bottom:25px;
     border-radius: var(--border-radius);
     
 }
@@ -118,7 +118,7 @@ body{
     height: 100%;
 }
 
-.widget{
+.meteo_widget{
     position: absolute;
 }
 
@@ -132,38 +132,36 @@ body{
 
 .notif {
     background: #f0f0f0;
-    padding: 20px;
+    padding: 2px;
     border-radius: 5px;
     color: var(--notif-text-color);
     background: var(--notif-background-color);
-    
-    
+    width: auto;   
 }
-.notif.-purple{
-
-}
-    
-
+ 
 .notif + .notif {
     margin-top: 5px;
 }
 
+
 .notif.-blue {
-    // --notif-background-color:black;
+    display: flex;
+    align-content:center ;
+    background-color: rgba($color: #000000, $alpha: 0.6);   
     --notif-text-color: #fff;
     height: 10vh;
+    border: rgba($color: #ffffff, $alpha: 0.7) solid 1px;
     
 }
 
 .notif.-purple {
-    --notif-background-color: black;
+    display: flex;
+    align-content:center ;
+    background-color: rgba($color: #000000, $alpha: 0.6);
     --notif-text-color: white;
     height: 10vh;
+    border: rgba($color: #ffffff, $alpha: 0.7) solid 1px;
     
-}
-.notif.-blue .notif.-purple :not(.notif_content) {
-    opacity: 50%;
-    background-color:black;
 }
 
 .notif_content {
@@ -176,6 +174,7 @@ body{
 }
 
 .notif_content_date {
+    padding: 5px;
     display: flex;
     flex-direction: column;
 }
@@ -187,17 +186,22 @@ body{
 .notif.-blue .notif_content_date .date {
     color: #fff;
 }
+
+
 .btn_bleu{
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: var(--border-radius);
-    background-color: aqua;
+    background-color: #2281c5;
     border: solid black 1px;
     height: 4.8vh;
-    margin-top: 5px;
+    margin-top: 1px;
     margin-bottom:var(--margin-bottom);
 
+}
+.btn_bleu_text{
+    color: #fff;
 }
 
 .minuteur{
