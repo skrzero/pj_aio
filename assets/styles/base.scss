@@ -202,49 +202,56 @@ body{
 }
 .btn_bleu_text{
     color: #fff;
+    font-size: 20px;
 }
 
 .minuteur{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 6px;
     overflow: hidden;
     height: 10vh;
     align-items: center;
     justify-content: center;
     height: 180px;
-    background-color:pink;
-    border: solid black 1px;
+    border: 1px solid rgba($color: #ffffff, $alpha: 0.7);
+    background-color: rgba($color: #000000, $alpha: 0.7);
     border-radius: var(--border-radius);
     
 }
 
-.titre_minuteur{
+.minuteur_titre{
     display: flex;
     justify-content: center;
+    color: #fff;
+    font-size: 20px;
     
     
 }
 
-.time_set{
+.minuteur_time{
     display: flex;
     align-content: center;
     justify-content: center;
-    font-size: 30px;
+    font-size: 70px;
+    color: #fff;
 }
-.container_hours{
+.minuteur_container{
     display: grid;
     grid-template-columns:repeat(3,1fr);
     align-self: center;
     gap: 2px;
     align-content:space-around ;
+    color: #2281c5;
 }
 .btn_vert{
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: var(--border-radius);
-    background-color: rgb(85, 222, 85);
+    background-color: #09af33;
+    color: #fff;
+    font-size: 20px;
     border: solid black 1px;
     height: 4.8vh;
     width: 90%;
