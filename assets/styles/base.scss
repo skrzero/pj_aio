@@ -108,14 +108,39 @@ body{
     border-color: black;
     height: 15vh;
     margin-bottom:25px;
-    border-radius: var(--border-radius);
+    border-radius: 6pxS;
     
+}
+.meteo_sliders{
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    flex-direction: row;
+    gap: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #aaa transparent;
+    
+}
+// penser a add drag and scroll js
+.meteo_sliders > img {
+    flex: 0 0 auto;
+    width: 100vh;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    cursor: grab;
+    opacity: 0.85;
 }
 
 .background_meteo{
     object-fit: cover;
     width: 100%;
     height: 100%;
+    border-radius: 6px;
 }
 
 .meteo_widget{
@@ -217,6 +242,7 @@ body{
     border: 1px solid rgba($color: #ffffff, $alpha: 0.7);
     background-color: rgba($color: #000000, $alpha: 0.7);
     border-radius: var(--border-radius);
+    margin-top: 20px;
     
 }
 
@@ -233,16 +259,16 @@ body{
     display: flex;
     align-content: center;
     justify-content: center;
-    font-size: 70px;
+    font-size: 65px;
     color: #fff;
 }
 .minuteur_container{
     display: grid;
     grid-template-columns:repeat(3,1fr);
-    align-self: center;
-    gap: 2px;
-    align-content:space-around ;
+    align-content: center;
+    gap: 22px;
     color: #2281c5;
+    translate: 5px;
 }
 .btn_vert{
     display: flex;
@@ -265,27 +291,35 @@ body{
     justify-content: space-around;
     position: relative;
     align-content: center;
-    border: solid black 1px;
-    border-radius: var(--border-radius);
-    background-color: grey;
-    margin-top: 10px;
+    margin-top: 30px;
     height: 20vh;
-}
-.bloc_note>img{
-    display: flex;
-    background-color: yellow;
-    width: 20vw;
-    height: 20vh;
-    padding: 8px;
+    gap: 30px;
     
 }
-.bloc_mail>img{
-    width: 20vw;
-    height: 20vh;
-    padding: 8px;
-    align-content: center;
-    background-color: red;
+.bloc_note{
+    display: flex;
+    border: 1px solid rgba($color: #ffffff, $alpha: 0.7);
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    width: 50%;
+    justify-content: center;
+    border-radius: 6px;
 }
+.bloc_mail{
+    display: flex;
+    border: 1px solid rgba($color: #ffffff, $alpha: 0.7);
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    width: 50%;
+    justify-content: center;
+    border-radius: 6px;
+}
+.bloc_note>img{
+    padding: 40px;
+        
+}
+.bloc_mail>img{ 
+    padding: 40px;
+}
+   
 
 
 
