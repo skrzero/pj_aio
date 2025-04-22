@@ -157,7 +157,8 @@ body{
     border-radius: 5px;
     color: var(--notif-text-color);
     background: var(--notif-background-color);
-    width: auto;   
+    width: auto;
+    font-size: 20px;   
 }
  
 .notif + .notif {
