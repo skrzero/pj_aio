@@ -295,6 +295,7 @@ body{
     height: 20vh;
     gap: 30px;
     
+    
     &_item {
         display: flex;
         border: 1px solid rgba($color: #ffffff, $alpha: 0.7);
@@ -303,9 +304,11 @@ body{
         border-radius: 6px;
         width: 50%;
         padding: 30px;
+        
 
         img {
             max-width: 100%;
+        
         }
     }
 }
