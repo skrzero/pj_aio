@@ -1,0 +1,1 @@
+(()=>{let e=document.querySelector(".header_btn_Menu"),n=document.getElementById("main-menu"),t=document.querySelector(".close-mainMenu");e&&n&&e.addEventListener("click",(function(){n.classList.add("visible")})),t&&n&&t.addEventListener("click",(function(){n.classList.remove("visible")}))})();

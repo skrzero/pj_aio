@@ -4,17 +4,13 @@
 @use 'settings/config.colors';
 
 @use 'components/sections';
+@use 'components/mainmenu';
+
+/** Pages du site **/
+@use 'pages/home';
+@use 'pages/meteo';
 
 
-
-
-
-
-
-
-*, :after, :before {
-    box-sizing: border-box;
-}
 
 :root {
     --gutter-width: 30px;
@@ -151,8 +147,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    justify-content: space-between;
-    
 }
 
 .notif {
@@ -270,6 +264,7 @@ body{
     color: #2281c5;
     translate: 5px;
 }
+
 .btn_vert{
     display: flex;
     justify-content: center;
