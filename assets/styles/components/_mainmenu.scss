@@ -5,11 +5,12 @@
     top: 0;
     left: 0;
     bottom: 0;
-    right: 20%;
+    right: 30%;
     display: none;
 
     &.visible {
         display: block;
+        padding-left: 20px;
     }
 
     ul {
@@ -17,12 +18,19 @@
             a {
                 display: block;
                 padding: var(--padding-sm) 0;
-                text-align: center;
+                text-align: left;
                 color: #fff;
                 font-weight: bold;
+                font-size: 20px;
+                
             }
         }
     }
+}
+
+.mainMenu>.close-mainMenu{
+    display: flex;
+    justify-content: right;
 }
 
 
@@ -32,6 +40,6 @@
     
     svg {
         color: #fff;
-        width: 40px;
+        width: 30px;
     }
 }
