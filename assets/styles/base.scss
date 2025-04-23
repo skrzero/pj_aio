@@ -2,6 +2,7 @@
 @use 'elements/document';
 
 @use 'settings/config.colors';
+@use 'settings/variable';
 
 @use 'components/sections';
 @use 'components/mainmenu';
@@ -9,23 +10,12 @@
 /** Pages du site **/
 @use 'pages/home';
 @use 'pages/meteo';
+@use 'pages/agenda';
 
 
 
-:root {
-    --gutter-width: 30px;
-    --padding-xs: 10px;
-    --padding-sm: 20px;
-    --padding-page: 15px;
-    --margin-bottom:10px;
-    --border-radius:6px;
-}
-:root {
-    --notif-text-color: #333;
-    --notif-background-color: transparent;
-    --notif-date-color: #333;
-    --minuteur-text-color: #F7BA4B;
-}
+
+
 body{
     background-image: url("/assets/images/background_neon_style_japonais_in_the_city_20250422080533_03.png");
 }
@@ -95,6 +85,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: var(--border-radius);
     
 }
 
@@ -104,8 +95,8 @@ body{
     border-style: solid ;
     border-width: 1px;
     border-color: black;
-    height: 15vh;
-    margin-bottom:25px;
+    height: 20vh;
+    margin-bottom:var(--margin-bottom);
     border-radius: 6pxS;
     
 }
@@ -115,7 +106,7 @@ body{
     overflow-x: auto;
     white-space: nowrap;
     flex-direction: row;
-    gap: 10px;
+    gap: var(--gap-m);
     scrollbar-width: thin;
     scrollbar-color: #aaa transparent;
     
@@ -191,13 +182,13 @@ body{
     grid-template-columns: auto auto auto;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: var(--gap-l);
     width: 100%;
     color: var(--minuteur-text-color);
 }
 
 .notif_content_date {
-    padding: 5px;
+    padding:var(--padding-xxs);
     display: flex;
     flex-direction: column;
     color: var(--minuteur-text-color);
@@ -232,7 +223,7 @@ body{
 .minuteur{
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: var(--gap-s);
     overflow: hidden;
     height: 10vh;
     align-items: center;
@@ -265,7 +256,7 @@ body{
     display: grid;
     grid-template-columns:repeat(3,1fr);
     align-content: center;
-    gap: 22px;
+    gap: var(--gap-l);
     color: #FBFF00;
     translate: 5px;
 }
@@ -293,7 +284,7 @@ body{
     align-content: center;
     margin-top: 30px;
     height: 20vh;
-    gap: 30px;
+    gap: var(--gap-xl);
     
     
     &_item {
@@ -303,7 +294,7 @@ body{
         justify-content: center;
         border-radius: 6px;
         width: 50%;
-        padding: 30px;
+        padding:var(--padding-L);
         
 
         img {
