@@ -1,4 +1,5 @@
 import { Menu } from "./components/Menu.js"
+import "./components/Timer.js";
 
 window.addEventListener('DOMContentLoaded', () => {
     
