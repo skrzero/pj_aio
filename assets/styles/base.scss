@@ -5,10 +5,12 @@
 
 @use 'components/sections';
 @use 'components/mainmenu';
+@use 'components/Timer';
 
 /** Pages du site **/
 @use 'pages/home';
 @use 'pages/meteo';
+
 
 
 
