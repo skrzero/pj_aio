@@ -1,3 +1,14 @@
+import { Menu } from "./components/Menu.js"
+
+window.addEventListener('DOMContentLoaded', () => {
+    
+    const MainMenu = new Menu();
+    
+    MainMenu.init();
+
+});
+
+
 let btnMenu = document.querySelector('.header_btn_Menu'),
     mainMenu = document.getElementById('main-menu'),
     btnCloseMenu = document.querySelector('.close-mainMenu');

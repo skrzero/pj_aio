@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="dist/css/theme.css">
     
     <!-- Appel du fichier JS -->
-    <script src="dist/js/theme.js" async></script> 
+    <script src="dist/js/theme.js" defer></script> 
 
     <title>AIO</title>
 </head>
@@ -27,15 +27,7 @@
                     </g>
                 </svg>
             </span>
-            <ul>
-                <li>
-                    <a href="" title="">Accueil</a>
-                    <a href="" title="">Météo</a>
-                    <a href="" title="">Minuteur</a>
-                    <a href="" title="">Calendrier</a>
-                    <a href="" title="">Mails</a>
-                </li>
-            </ul>
+            <div id="menu-js"></div>
         </div>
 
         <header id="header">
@@ -95,7 +87,7 @@
             </div>
 
             <div class="btn_bleu">
-                <div class="btn_bleu_text">Tout voir</div>
+                <a class="btn_bleu_text" href="agenda.html">Tout voir</a>
 
             </div>
             <!-- fin de notification -->
@@ -125,7 +117,10 @@
                 </div>
             </div>
             <!-- fin de bloc mail  -->
-        </div>    
+        </div> 
+        <footer class="footer">
+            <p class="footer_year">2025</p>
+        </footer>   
 </body>
 
 </html>
