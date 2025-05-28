@@ -12,13 +12,14 @@
 </head>
 
 <body>
-    <section class="bg-secondary min-vh-100 py-5">
+    <section class="bg-secondary min-vh-100 py-5 text-white">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <h1 class="text-center mb-4">bloc notes</h1>
                     <textarea class="form-control" id="inputUser" rows="3" placeholder="ecrire ici ..."></textarea>
                     <button type="button" class="btn btn-primary" onclick="ajouterNote()">Ajouter une note</button>
+                    <ul class="mt-4" id="listeNotes"></ul>
                 </div>
             </div>
 
