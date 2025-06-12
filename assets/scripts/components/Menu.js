@@ -1,4 +1,4 @@
-import { links } from "../data/menu";
+import { links } from "../data/menu.js";
 
 export class Menu {
 
@@ -11,7 +11,7 @@ export class Menu {
         let menuTemplate = `<ul>`;
 
         links.forEach((link) =>  {
-            menuTemplate += `<li><a href="" icone="" title="">${link.title}</a></li>` 
+            menuTemplate += `<li><a href="${link.url}" title="${link.title}">${link.title}</a></li>` 
         });
         
          menuTemplate += `</ul>`;

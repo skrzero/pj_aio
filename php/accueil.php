@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="<?= CSS_DIR;?>theme.css<?php echo '?v=' . filemtime(CSS_DIR . 'theme.css'); ?>">
     
     <!-- Appel du fichier JS -->
-    <script  src="dist/js/theme.js" defer></script> 
+    <script src="<?= JS_DIR;?>theme.js<?php echo '?v=' . filemtime(CSS_DIR . 'theme.css'); ?>" defer></script> 
 
     <title>AIO</title>
 </head>
@@ -33,7 +33,7 @@
         <header id="header">
 
             <div class="header_btn_Menu">
-                <img src="images/burger-menu-svgrepo-com.svg" alt="menu" class="header_btn_menu_logo">
+                <img src="<?=IMG_DIR?>burger-menu-svgrepo-com.svg" alt="menu" class="header_btn_menu_logo">
             </div>
 
             <div class="search_Bar">
@@ -41,16 +41,16 @@
             </div>
 
             <div class="logo">
-                <img src="images/Animation_-_1743170664427.gif" alt="">
+                <img src="<?=IMG_DIR?>Animation_-_1743170664427.gif" alt="">
             </div>
         </header>
         <!-- meteo -->
         <div class="meteo">
             <div class="meteo_sliders">
             <div class="meteo_widget">Widget Meteo</div>
-            <img class="background_meteo" src="images/nuage.jpg" alt="">
+            <img class="background_meteo" src="<?=IMG_DIR?>nuage.jpg" alt="">
             <div class="meteo_widget">Widget Meteo</div>
-            <img class="background_meteo" src="images/nuage.jpg" alt="">
+            <img class="background_meteo" src="<?=IMG_DIR?>nuage.jpg" alt="">
         </div>
         </div>
         <!-- notification -->
@@ -66,7 +66,7 @@
                             Rendez-vous garage pour changer les pneus ...
                         </div>
                         <div class="notif_content_action">
-                            <img src="images/chevron-right.png" alt="">
+                            <img src="<?=IMG_DIR?>chevron-right.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
                             Rendez-vous docteur
                         </div>
                         <div class="notif_content_action">
-                            <img src="images/chevron-right.png" alt="">
+                            <img src="<?=IMG_DIR?>chevron-right.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -108,12 +108,12 @@
             <!-- bloc note  -->
             <div class="bloc">
                 <div class="bloc_item">
-                    <img src="images/memo-removebg-preview.png" alt="">
+                    <img src="<?=IMG_DIR?>memo-removebg-preview.png" alt="">
                 </div>
                 <!-- fin de bloc note  -->
                 <!-- bloc mail  -->
                 <div class="bloc_item">
-                    <img src="images/mail-removebg-preview.png" alt="">
+                    <img src="<?=IMG_DIR?>mail-removebg-preview.png" alt="">
                 </div>
             </div>
             <!-- fin de bloc mail  -->

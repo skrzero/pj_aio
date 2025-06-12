@@ -1,35 +1,45 @@
 {
-    "name": "Afec starter kit",
-    "version": "1.0.0",
-    "description": "Afec starter kit for students",
-    "main": "js/theme.js",
-    "scripts": {
-        "build": "cross-env NODE_ENV=production webpack --progress",
-        "watch": "webpack --progress --watch",
-        "scss-lint": "stylelint \"**/*.scss\" --formatter verbose",
-        "scss-fix": "stylelint \"**/*.scss\" --fix"
-    },
-    "author": "Touchet Laurent",
-    "license": "",
-    "devDependencies": {
-        "@fullhuman/postcss-purgecss": "^7.0.2",
-        "autoprefixer": "^10.4.21",
-        "css-loader": "^7.1.2",
-        "csso-webpack-plugin": "^2.0.0-beta.3",
-        "esbuild-loader": "^4.3.0",
-        "mini-css-extract-plugin": "^2.9.2",
-        "postcss-flexibility": "^3.0.0",
-        "postcss-loader": "^8.1.1",
-        "sass": "^1.85.1",
-        "sass-loader": "^16.0.5",
-        "style-loader": "^4.0.0",
-        "stylelint": "^16.15.0",
-        "webpack": "^5.98.0",
-        "webpack-cli": "^6.0.1",
-        "webpack-license-plugin": "^4.5.1"
-    },
-    "dependencies": {
-        "@tailwindcss/vite": "^4.1.3",
-        "tailwindcss": "^4.1.3"
-    }
+  "name": "Afec Starter kit",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Afec starter kit",
+  "main": "js/theme.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --progress",
+    "watch": "webpack --progress --watch",
+    "watch-sync": "cross-env NODE_ENV=development webpack --watch",
+    "scss-lint": "stylelint \"**/*.scss\" --formatter verbose",
+    "scss-fix": "stylelint \"**/*.scss\" --fix"
+  },
+  "author": "Afec",
+  "license": "",
+  "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "@eslint/js": "^9.26.0",
+    "autoprefixer": "^10.4.21",
+    "babel-loader": "^10.0.0",
+    "browser-sync": "^2.29.3",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "css-loader": "^7.1.2",
+    "csso-webpack-plugin": "^2.0.0-beta.3",
+    "eslint": "^9.26.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-webpack-plugin": "^5.0.1",
+    "globals": "^16.1.0",
+    "mini-css-extract-plugin": "^2.9.2",
+    "postcss-loader": "^8.1.1",
+    "sass": "^1.85.1",
+    "sass-loader": "^16.0.5",
+    "style-loader": "^4.0.0",
+    "stylelint": "^16.15.0",
+    "stylelint-config-standard-scss": "^15.0.1",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.1",
+    "webpack-license-plugin": "^4.5.1"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  }
 }
