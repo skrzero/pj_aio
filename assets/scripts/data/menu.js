@@ -1,24 +1,24 @@
 export const links = [
     {
         title: 'Accueil',
-        url: "index.html",
+        url: "index.php",
     },
     {
         title: "Meteo",
-        url: 'meteo.html',
+        url: 'index.php?page=meteo',
         icone: ""
     },
     {
         title: 'Minuteur',
-        url: "",
+        url: 'index.php?page=minuteur',
     },
     {
         title: 'Calendrier',
-        url: "",
+        url: 'index.php?page=calendrier',
     },
     {
         title: 'Mails',
-        url: "",
+        url: 'index.php?page=mails',
     },
  ];     
  
