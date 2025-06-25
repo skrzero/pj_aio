@@ -1,0 +1,12 @@
+ .carousel-item {
+      height: 200px; /* Hauteur personnalisée */
+      width: 90vh;
+      background-color: #e0f7fa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+body {
+    background-color: red;
+}
